@@ -188,10 +188,10 @@ public class WRLDARMapController : MonoBehaviour
 
     private void DisableARPlaneMeshVisualizer(GameObject obj)
     {
-        obj.GetComponent<ARPlaneMeshVisualizer>().enabled = false;
-        obj.GetComponent<MeshCollider>().enabled = false;
-        obj.GetComponent<MeshRenderer>().enabled = false;
-        obj.GetComponent<LineRenderer>().enabled = false;
+        obj.GetComponent<MeshVisual>().enabled = false;
+        //obj.GetComponent<MeshCollider>().enabled = false;
+        //obj.GetComponent<MeshRenderer>().enabled = false;
+        //obj.GetComponent<LineRenderer>().enabled = false;
     }
 
     private void UpdateSurfaceStateMsg(SurfaceState surfaceState)
